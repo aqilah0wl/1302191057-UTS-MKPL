@@ -15,7 +15,7 @@ public class TaxFunction {
 	 */
 	
 	
-	public static int calculateTax(int monthlySalary, int otherMonthlyIncome, int numberOfMonthWorking, int deductible, boolean isMarried, int numberOfChildren) {
+	public static int calculateTax(int monthlySalary, int otherMonthlyIncome,  int deductible, boolean isMarried, int numberOfChildren) {
 		
 		int tax = 0;
 		
@@ -38,7 +38,16 @@ public class TaxFunction {
 		}else {
 			return tax;
 		}
+
 			 
+	}
+
+	public static printInfo(int numberOfMonthWorking){
+		if (numberOfMonthWorking > 12) {
+			System.err.println("More than 12 month working per year");
+		} else {
+			System.err.println("Less than 12 month working per year")
+		}
 	}
 	
 }
