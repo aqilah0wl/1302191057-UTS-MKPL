@@ -19,11 +19,11 @@ public class Employee extends Biodata{
 	private List<Person> childs;
 	
 	
-	public Employee(String employeeId, String firstName, String lastName, String idNumber, String address, Date datejoin, boolean isForeigner, Sex gender) {
+	public Employee(String employeeId, Person person, String address, Date datejoin, boolean isForeigner, Sex gender) {
 		this.employeeId = employeeId;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.idNumber = idNumber;
+		this.firstName = person.getFirstName;
+		this.lastName = person.getLastName;
+		this.idNumber = person.getIdNumber;
 		this.address = address;
 		this.datejoin = datejoin;
 		this.isForeigner = isForeigner;
